@@ -15,4 +15,4 @@ while RUNNING:
     pygame.display.flip()
 
 pygame.quit()
-# game ends here
+# game ends here -sm
