@@ -6,8 +6,9 @@ import random
 #  2. Player gets 5 guesses to determine the number
 #  3. At each chance, the guesses are displayed and the user is told if
 #     the guess is high or low
-#  4. Player can exit the game at any time by typing "exit"
-#  5. Player is given the opportunity to play again at the end of the game.
+#  4. Player is given the opportunity to play again at the end of the game.
+#  5. Player can exit the game at any time by typing "exit"
+#  6. When the user exits, the game tells them how many times they played and the number of wins and losses
 
 # global game variables
 
