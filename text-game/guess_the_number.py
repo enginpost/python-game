@@ -35,8 +35,9 @@ def clear():
 
 def setup_game():
     """ Initialize the variables at the start of a new game """
+    global user_playing, user_guesses, user_difficulty, game_number, user_won, user_games_count
     clear()
-    global user_playing, user_guesses, user_difficulty, game_number, user_won
+    user_games_count += 1
     user_playing = True
     user_guesses = []
     user_difficulty = 1
@@ -98,7 +99,6 @@ while user_playing:
     if play_again.lower() == 'n':
         user_playing = False
     else:
-        user_games_count += 1
         setup_game()
 clear()
 end_message = f"Thank you for playing {user_name}. "
