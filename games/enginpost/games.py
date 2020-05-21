@@ -28,6 +28,8 @@ class GuessingGame:
 
     def pluraled(self, singular_text, plural_text, numeric_value):
         '''Display the right pluraled word'''
+        if not isinstance(numeric_value, int):
+            raise ValueError("The test value should be an int")
         if numeric_value == 1:
             return singular_text
         else:

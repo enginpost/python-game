@@ -14,3 +14,12 @@ class TestGuessingGame(unittest.TestCase):
         game = GuessingGame()
         result = game.pluraled('game', 'games', 2)
         self.assertEqual(result, 'games')
+
+    def test_pluraled_nan(self):
+        try:
+            game = GuessingGame()
+            game.pluraled('game', 'games', 'a')
+        except ValueError:
+            pass
+        else:
+            self.assertFalse(True, "ValueError Exception not raise")
