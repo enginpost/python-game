@@ -87,7 +87,7 @@ while user_playing:
     input_msg = '1:Easy 2:Medium 3:Hard | Select a difficulty level: '
     input_difficulty = int(input(input_msg))
     print(set_difficulty(input_difficulty))
-    print(f'OK, I have a number!')
+    print('OK, I have a number!')
     while len(user_guesses) < 5:
         message = ''
         user_guesses.append(int(input('Make a guess: ')))
