@@ -1,3 +1,6 @@
+'''Object Oriented games'''
+
+
 class GuessingGame:
     '''Object Oriented guessing game'''
     import random
