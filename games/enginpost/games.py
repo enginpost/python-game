@@ -129,7 +129,7 @@ class SpaceShooter:
         self.nuclear_fuel = 0
 
     def lives(self):
-        '''doc'''
+        '''Return number of lives'''
         return self.remaining_lives
 
     def fuel(self, fuel_container):
