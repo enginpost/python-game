@@ -113,3 +113,33 @@ class GuessingGame:
         end_message += f" and {self.user_losses} "
         end_message += self.pluraled('loss', 'losses', self.user_losses) + "."
         print(end_message)
+
+
+class SpaceShooter:
+    '''PyGame space shooter experiment'''
+    import pygame
+
+    def __init__(self):
+        '''Initialization of SpaceShooter'''
+        self.reset_game()
+
+    def reset_game(self):
+        self.remaining_lives = 3
+        self.rocket_fuel = 0
+        self.nuclear_fuel = 0
+
+    def lives(self):
+        '''doc'''
+        return self.remaining_lives
+
+    def fuel(self, fuel_container):
+        '''Fueling the SpaceShooter'''
+        if fuel_container:
+            if fuel_container['type'] == 'rocket':
+                if fuel_container.get('level') is not None:
+                    self.rocket_fuel += fuel_container['level']
+                return self.rocket_fuel
+            elif fuel_container['type'] == 'nuclear':
+                if fuel_container.get('level') is not None:
+                    self.nuclear_fuel += fuel_container['level']
+                return self.nuclear_fuel
