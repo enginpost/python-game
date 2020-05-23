@@ -143,3 +143,4 @@ class SpaceShooter:
                 if fuel_container.get('level') is not None:
                     self.nuclear_fuel += fuel_container['level']
                 return self.nuclear_fuel
+
