@@ -1,0 +1,9 @@
+size: 272x272
+Idle = 0-20
+Shoot_right = 21-34
+Shoot_left = 35-50
+Shoot_front = 51-65
+Shoot_back = 66-81
+
+Create Spritesheet for individual images using:
+https://www.codeandweb.com/free-sprite-sheet-packer
