@@ -1,4 +1,5 @@
 '''Classes for PirateRun game'''
+import os
 import sys
 import pygame
 
@@ -23,8 +24,8 @@ class PyrateShip:
         self.screen_rect = pr_game.screen.get_rect()
 
         # load the ship
-        img = 'D:\\OneDrive\\_Projects\\_python\\samples'
-        img += '\\games\\enginpost\\PyrateShip.png'
+        img = os.path.dirname(os.path.realpath(__file__))
+        img = os.path.join(img, 'PyrateShip.png')
         self.image = pygame.image.load(img).convert()
         self.rect = self.image.get_rect()
         # place the ship at the bottom center of the screen
